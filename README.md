@@ -23,7 +23,7 @@ It returns:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ev-impact-api.git
+   (https://github.com/Ilyasse-B/Green-Energy-Calculator.git)
    cd ev-impact-api
 
 2. Create a virtual environment (optional but recommended):
@@ -52,6 +52,7 @@ It returns:
     {
   "energy_kwh": 1000
     }
+    ```
 
 5. Hit "Execute" to see your results!
 
