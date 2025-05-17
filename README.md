@@ -23,8 +23,8 @@ It returns:
 
 1. Clone the repository:
    ```bash
-   (https://github.com/Ilyasse-B/Green-Energy-Calculator.git)
-   cd ev-impact-api
+   [https://github.com/Ilyasse-B/Green-Energy-Calculator.git]
+   cd Green-Energy-Calculator
 
 2. Create a virtual environment (optional but recommended):
     ```bash
