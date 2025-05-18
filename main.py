@@ -1,3 +1,5 @@
+import os
+import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Dict
@@ -38,3 +40,8 @@ def calculate_environmental_impact(data: EnergyInput) -> Dict[str, float]:
         "ice_cars_off_road": round(ice_cars_off_road, 2),
         "ice_miles_equivalent": round(ev_miles, 2)  # Same as ev_miles_charged
     }
+
+# Required for Render deployment
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Render provides this environment variable
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
