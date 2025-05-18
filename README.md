@@ -48,9 +48,9 @@ It returns:
 3. You’ll see the FastAPI Swagger UI. Scroll down to the POST /calculate endpoint.
 
 4. Click "Try it out" and enter your energy usage like this:
-    ```bash
+    ```json
     {
-  "energy_kwh": 1000
+        "energy_kwh": 1000
     }
     ```
 
