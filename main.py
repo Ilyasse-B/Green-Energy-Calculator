@@ -3,8 +3,18 @@ import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Dict
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="EV Charging Environmental Impact Calculator")
+
+# CORS setup
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # allows ALL origins, including non-HTTPS
+    allow_credentials=False,  # must be False if using "*"
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class EnergyInput(BaseModel):
     energy_kwh: float  # Energy consumed in kilowatt-hours
