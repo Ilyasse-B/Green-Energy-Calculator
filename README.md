@@ -12,6 +12,15 @@ It returns:
 
 ---
 
+# This API has been deployed on Render at:
+[Green Energy Calculator](https://green-energy-calculator.onrender.com)
+
+It is slow to start because of free plan.
+
+Use /calculate as the end point for the API.
+
+The API is accessible from any HTTPS website through my CORS policy, so if you want to use this on your own web app, feel free
+
 ## 🚀 Getting Started
 
 ### 🧱 Prerequisites
